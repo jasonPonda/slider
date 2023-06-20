@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Owl-Carousel Slider</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+        .wrapper {
+            margin-left: 3rem;
+            width: 100%;
+        }
+
+        .carousel {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 30px;
+        }
+
+        .carousel .card {
+            height: 10rem;
+            width: 18rem;
+            color: #fff;
+            text-align: center;
+            margin: 20px 0;
+            line-height: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel .card p {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .carousel .card-1 {
+            background: #bd2525;
+        }
+
+        .carousel .card-2 {
+            background: #1A120B;
+        }
+
+        .carousel .card-3 {
+            background: #788aac;
+        }
+
+        .carousel .card-4 {
+            background: #ECA869;
+        }
+
+        .carousel .card-5 {
+            background: #1A120B;
+        }
+
+        .carousel .card-6 {
+            background: #788aac;
+        }
+
+        .carousel .card-7 {
+            background: #bd2525;
+        }
+
+        .carousel .card-8 {
+            background: #1A120B
+        }
+
+        .carousel .card-9 {
+            background: #788aac;
+        }
+
+        .carousel .card-10 {
+            background: #1A120B;
+        }
+
+        .owl-dots {
+            text-align: center;
+            margin-top: 40px;
+            margin-right: 6rem;
+        }
+
+        .owl-dot {
+            height: 15px;
+            width: 45px;
+            margin: 0 5px;
+            outline: none;
+            border-radius: 14px;
+            border: 2px solid #bc1c00 !important;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .owl-dot.active,
+        .owl-dot:hover {
+            background: #bc0000 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="carousel owl-carousel">
+            <div class="card card-1">
+                <p>Analyse des besoins métier des clients.</p>
+
+            </div>
+            <div class="card card-2">
+                <p>Configuration et personnalisation de la plateforme ServiceNow en fonction des exigences spécifiques.
+                </p>
+
+
+            </div>
+            <div class="card card-3">
+                <p>Développement d'applications et de modules complémentaires personnalisés.</p>
+
+            </div>
+            <div class="card card-4">
+                <p>Intégration de ServiceNow avec d'autres systèmes existants.</p>
+
+            </div>
+            <div class="card card-5">
+                <p>Formation des utilisateurs finaux sur l'utilisation de la plateforme ServiceNow.</p>
+
+            </div>
+            <div class="card card-6">
+                <p>Fourniture d'un support technique et résolution des problèmes rencontrés par les utilisateurs.</p>
+
+            </div>
+            <div class="card card-7">
+                <p>Optimisation et amélioration continue de l'utilisation de la plateforme ServiceNow.</p>
+
+            </div>
+            <div class="card card-8">
+                <p>Collaboration avec les équipes internes et les parties prenantes pour assurer la satisfaction des
+                    clients et la réussite des projets.</p>
+
+            </div>
+            <div class="card card-9">
+                <p> Documentation des processus, des configurations et des personnalisations réalisées.</p>
+
+            </div>
+            <div class="card card-10">
+                <p>Suivi des dernières mises à jour et fonctionnalités de la plateforme ServiceNow</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(".carousel").owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: { items: 1, nav: false },
+                600: { items: 2, nav: false },
+                1000: { items: 3, nav: false },
+            },
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
